@@ -45,6 +45,8 @@ let areaCirculo = PI * (raio * raio)
 
 console.log (`A área do cirulo é ${areaCirculo}`)
 
+// let pi =  Math.PI
+// console.log(pi.toFixed(2))
 
 
 
