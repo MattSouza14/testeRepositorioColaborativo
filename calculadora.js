@@ -15,13 +15,24 @@ switch(op){
         break;
 
     case "/":
-        total = num1 / num2
-        console.log(`O valor da divisão é = ${total}`) 
-        break;
-
-    default:
+        if (num2 != 0){
+            total = num1 / num2
+            console.log(`O valor da divisão é = ${total}`) 
+            break;
+        }
+        else{
+            console.log(`Não é possível dividir por 0`)
+            break;
+        }
+    case "*":
         total = num1 * num2
         console.log(`O valor da multiplicação é = ${total}`)
         break;
+        
+
+    default:
+        console.log("Operação invalida")
+        break;
+        
 
 }
