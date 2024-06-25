@@ -54,11 +54,11 @@ let num = Number(prompt("Digite um número: "))
 
 if (num % 2 == 0){
   console.log("PAR")
-  cosole.log(`Somando + 5... novo valor para ${num} é ${num + 5}`)
+  console.log(`Somando + 5... novo valor para ${num} é ${num + 5}`)
 }
 else {
   console.log("IMPAR")
-  cosole.log(`Somando + 8... novo valor para ${num} é ${num + 8}`)
+  console.log(`Somando + 8... novo valor para ${num} é ${num + 8}`)
 }
 
 //Questão 7
