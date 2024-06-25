@@ -31,9 +31,9 @@ console.log (`O valor da área do quadrado é ${area}`)
 //Questão 4
 
 let base = Number(prompt("Informe o valor da base:"))
-let altura = Number(prompt("Informe o valor da altura:"))
+let h = Number(prompt("Informe o valor da altura:"))
 
-let areaTriangulo = (base * altura) / 2
+let areaTriangulo = (base * h) / 2
 
 console.log(`A área do triangulo é ${areaTriangulo}`)
 
@@ -47,6 +47,40 @@ console.log (`A área do cirulo é ${areaCirculo}`)
 
 // let pi =  Math.PI
 // console.log(pi.toFixed(2))
+
+//Questão 6
+
+let num = Number(prompt("Digite um número: "))
+
+if (num % 2 == 0){
+  console.log("PAR")
+  cosole.log(`Somando + 5... novo valor para ${num} é ${num + 5}`)
+}
+else {
+  console.log("IMPAR")
+  cosole.log(`Somando + 8... novo valor para ${num} é ${num + 8}`)
+}
+
+//Questão 7
+
+let peso = Number(prompt("Digite seu peso: "))
+let altura = Number(prompt("Digite sua altura: "))
+
+let IMC = peso / (altura * altura)
+
+if(IMC < 18.5){
+  console.log(`Você está abaixo do peso com o imc de ${IMC}`)
+}
+else if(IMC >= 18.5 && IMC < 25){
+  console.log(`Você está com peso normal com o imc de ${IMC}`)
+}
+else if(IMC >= 25 && IMC < 30){
+  console.log(`Você está acima do peso com o imc de ${IMC}`)
+}
+else{
+  console.log(`Você está obeso com o imc de ${IMC}`)
+}
+
 
 
 
