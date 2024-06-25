@@ -67,19 +67,22 @@ let peso = Number(prompt("Digite seu peso: "))
 let altura = Number(prompt("Digite sua altura: "))
 
 let IMC = peso / (altura * altura)
+  if(isNaN(IMC)){
+  console.log(`Valor recebido não é um número`)
+}
+  else if(IMC < 18.5){
+    console.log(`Você está abaixo do peso com o imc de ${IMC.toFixed(2)}`)
+}
+  else if(IMC >= 18.5 && IMC < 25){
+    console.log(`Você está com peso normal com o imc de ${IMC.toFixed(2)}`)
+}
+  else if(IMC >= 25 && IMC < 30){
+    console.log(`Você está acima do peso com o imc de ${IMC.toFixed(2)}`)
+}
+  else{
+    console.log(`Você está obeso com o imc de ${IMC.toFixed(2)}`)
+}
 
-if(IMC < 18.5){
-  console.log(`Você está abaixo do peso com o imc de ${IMC}`)
-}
-else if(IMC >= 18.5 && IMC < 25){
-  console.log(`Você está com peso normal com o imc de ${IMC}`)
-}
-else if(IMC >= 25 && IMC < 30){
-  console.log(`Você está acima do peso com o imc de ${IMC}`)
-}
-else{
-  console.log(`Você está obeso com o imc de ${IMC}`)
-}
 
 
 
