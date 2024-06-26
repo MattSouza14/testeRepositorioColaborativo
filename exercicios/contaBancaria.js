@@ -3,10 +3,12 @@ const senhaTitular= 123654
 let saldo = 600
 let saque
 let deposito
+let cont = 1
+let acertouSenha 
 
 let senha = Number(prompt("Informe a senha da conta(APENAS NUMEROS)"))
-
 if (senha === senhaTitular){
+    acertouSenha = true
 
 let operacao = prompt("Informe a operação bancaria que dejesa realizar: \n[|E-Extrato|S-Saque|D-Deposito|]")
 
@@ -42,5 +44,18 @@ switch (operacao){
 }
 }
 else{
-    console.log("Senha incorreta")
+    acertouSenha = false
+
+    if (senha === senhaTitular){
+        acertouSenha = true
+    }
+    else{
+        while(cont < 3 && acertouSenha == false){ 
+            senha = Number(prompt(`SENHA ERRADA: Informe a senha da conta(APENAS NUMEROS)`))
+            cont++
+            
+        }
+    }
+        
+
 }
