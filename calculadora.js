@@ -1,5 +1,10 @@
+function operacoes(){
+   let op = prompt("Escolha uma operação [| + | - | / | * |]")
+return op
+}
+
 let num1 = Number(prompt("Escolha um número"))
-let op = prompt("Escolha uma operação [| + | - | / | * |]")
+op = operacoes()
 let num2 = Number(prompt("Escolha o segundo número"))
 let total
 switch(op){

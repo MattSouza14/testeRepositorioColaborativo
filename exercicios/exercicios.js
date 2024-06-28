@@ -102,7 +102,7 @@
 //     console.log (`Sua media final é ${mediaNotas}`)
 // }
 
-//Questão 9
+// Questão 9
 // let numeros = 0
 // let contNum = 0
 // let somaNumeros = 0
@@ -129,13 +129,13 @@
 // }
 // console.log (`Quantida de número entre 30 e 90 = ${numeroIntervalo}`)
 
-//Questão 10
+// Questão 10
 // let tabuada = Number(prompt("Qual número você quer ver a tabuada: "))
 // for (let i = 0; i < 10; i++){
 //   console.log(`${i} x ${tabuada} = ${i * tabuada}`)
 // }
 
-//Questão 11 
+// Questão 11 
 
 // let numClientes = Number(prompt("Quantos clientes quer fazer o cadastro: "))
 // let faturamentoClientes = 0
@@ -158,26 +158,120 @@
 // }
 
 
-//Questão 12
+// Questão 12
 
-let valorDesconto = 0.00
-let valorCompra = 400
+// let valorDesconto = 0.00
+// let valorCompra = 400
 
-for (let i = 0; i <25; i++){
-  valorCompra+=100
-  valorDesconto+=0.01
+// for (let i = 0; i <25; i++){
+//   valorCompra+=100
+//   valorDesconto+=0.01
 
-  console.log(`R$${valorCompra}|${ 100 * valorDesconto.toFixed(2)}%|R$${valorCompra-(valorDesconto * valorCompra)}`)
+//   console.log(`R$${valorCompra}|${ 100 * valorDesconto.toFixed(2)}%|R$${valorCompra-(valorDesconto * valorCompra)}`)
 
+// }
+
+// // Questão 13
+
+
+// cont = 10
+// while (cont >= 0){
+//   console.log(cont)
+//   cont--
+// }
+// console.log("FIM")
+
+
+// Questão 14
+
+// let inteiro = 0
+// let qtdIncremento =0
+
+// while(inteiro <100000){
+//   inteiro += 1000
+//   qtdIncremento++
+//   console.log(`${inteiro}`)
+// }
+// console.log(`O número foi incrementado ${qtdIncremento} vezes`)
+
+// let numUser = 0
+// for(let i= 0; i <10; i++){
+//   numUser+=Number(prompt(`Digite o ${i+1}º número: `))
+// }
+// console.log(`A soma total = ${numUser}`)
+
+// // Questão 15
+let numero =Number(prompt(`Digite o 1º número: `))
+let maior = numero
+let menor = numero
+
+ 
+
+for(let i= 2; i <=10; i++){
+
+  if(numero > maior){
+    maior = numero
+  }
+  else if ( numero < menor){
+    menor = numero
+  }
+  else {
+   
+  }
+  numero = Number(prompt(`Digite o ${i}º número: `))
 }
+console.log(`O maior número digitado foi ${maior} e o menor número digitado foi ${menor}`)
 
+// // Questão 16
+
+
+// let somaPares = 0
+// let qtdPares = 0
+
+
+//  for(let i =0; i <=100; i++){
+//   if(i %2==0 && qtdPares <=50){
+//     somaPares+= i
+//     qtdPares++
+//   }
   
+// }
 
 
-  
+// console.log(qtdPares)
+// console.log(`Total da soma dos números pares = ${somaPares}`)
 
 
+// //  Questão 17
+
+//  let n
+//  n = Number(prompt("Digite um número: "))
+//  for(let i = 0; i <= n; i++){
+//   console.log(i)
 
 
+//  }
 
+// // Questão 19
 
+// let numInteiroImparPositivo
+// numInteiroImparPositivo = parseInt(prompt("Digite um número inteiro positivo impar: "))
+// for(let i = 1; i <= numInteiroImparPositivo; i++){
+//   if (i %2== 1){
+//     console.log(i)
+
+//   }
+// }
+
+// // Questão 20 
+
+// let numInteiro
+// numInteiro = Number(prompt("Digite um número inteiro positivo: "))
+
+// for(let i = 0; i <= numInteiro; i++){
+
+//   if (i%2==1){
+//     console.log(i)
+//   }
+
+// }
