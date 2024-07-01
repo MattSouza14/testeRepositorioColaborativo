@@ -201,26 +201,26 @@
 // console.log(`A soma total = ${numUser}`)
 
 // // Questão 15
-let numero =Number(prompt(`Digite o 1º número: `))
-let maior = numero
-let menor = numero
+// let numero =Number(prompt(`Digite o 1º número: `))
+// let maior = numero
+// let menor = numero
 
  
 
-for(let i= 2; i <=10; i++){
+// for(let i= 2; i <=10; i++){
 
-  if(numero > maior){
-    maior = numero
-  }
-  else if ( numero < menor){
-    menor = numero
-  }
-  else {
+//   if(numero > maior){
+//     maior = numero
+//   }
+//   else if ( numero < menor){
+//     menor = numero
+//   }
+//   else {
    
-  }
-  numero = Number(prompt(`Digite o ${i}º número: `))
-}
-console.log(`O maior número digitado foi ${maior} e o menor número digitado foi ${menor}`)
+//   }
+//   numero = Number(prompt(`Digite o ${i}º número: `))
+// }
+// console.log(`O maior número digitado foi ${maior} e o menor número digitado foi ${menor}`)
 
 // // Questão 16
 
