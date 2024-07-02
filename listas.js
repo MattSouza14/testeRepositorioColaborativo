@@ -51,33 +51,39 @@
 // arrayNotas.unshift('inicio')
 // arrayNotas.shift()
 
-let pessoasAtender = 3
+// let pessoasAtender = 3
 
-let filaPessoas = ["Mateus", "J", "Paulo", "Camila", "K", "Marcos", "Fernanda", "Julio", "Jacqueline", "Julia"]
+// let filaPessoas = ["Mateus", "J", "Paulo", "Camila", "K", "Marcos", "Fernanda", "Julio", "Jacqueline", "Julia"]
 
-let ultimoAtendido = []
-let atendidasAmanha = []
+// let ultimoAtendido = []
+// let atendidasAmanha = []
 
-for(let i = 0; i <pessoasAtender; i++){
-    ultimoAtendido.unshift(filaPessoas.shift())
+// for(let i = 0; i <pessoasAtender; i++){
+//     ultimoAtendido.unshift(filaPessoas.shift())
     
 
-}
-console.log(ultimoAtendido)
+// }
+// console.log(ultimoAtendido)
 
-for (let i = 0 ; i < 7; i++){
-    // atendidasAmanha[i] = filaPessoas[i]
-    atendidasAmanha.push(filaPessoas.shift())
+// for (let i = 0 ; i < 7; i++){
+//     // atendidasAmanha[i] = filaPessoas[i]
+//     atendidasAmanha.push(filaPessoas.shift())
 
-}
-console.log(atendidasAmanha)
+// }
+// console.log(atendidasAmanha)
 
 
-let numeros = [ 1, 2, 3]
- function multiplicar(n1){
-    return n1 **2
- }
+// let numeros = [ 1, 2, 3]
+//  function multiplicar(n1){
+//     return n1 **2
+//  }
  
-let numerosAoQuadrado = numeros.map((item)=>multiplicar(item))
-console.log(numeros)
-console.log(numerosAoQuadrado)
+// let numerosAoQuadrado = numeros.map((item)=>multiplicar(item))
+// console.log(numeros)
+// console.log(numerosAoQuadrado)
+
+let arrayEndereco = ["rua", "Bairro", "Cidade", "Estados", "Cep"]
+
+for(let element in arrayEndereco){
+    console.log(element)
+}
