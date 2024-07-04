@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+</head>
+<body>
+    <h1>Loja</h1>
+
+    <form action="#">
+        <label for="valor">Valor: </label>
+        <input type="number" name="valor" id="valor">
+        <br>
+        <label for="quantidade">Quantidade: </label>
+        <input type="number" name="quantidade" id="quantidade">
+        <br>
+        <label for="cor">Cor da etiqueta: </label>
+        <br>
+        <input type="radio" name="corEtiqueta" id="vermelha" value="vermelha">
+        <label for="">Etiqueta Vermelha</label>
+        <br>
+        <input type="radio" name="corEtiqueta" id="verde" value="verde">
+        <label for="">Etiqueta Verde</label>
+        <br>
+        <input type="radio" name="corEtiqueta" id="amarela" value="amarela">
+        <label for="">Etiqueta Amarela</label>
+
+        <input type="button" value="Calcular" onclick="desconto()">
+    </form>
+
+    <div id="total">
+
+
+    </div>
+<script src="/lojas.js"></script>
+</body>
+</html>

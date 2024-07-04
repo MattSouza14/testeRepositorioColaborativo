@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        .oculto{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <h1>Titulo 1</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sapiente? </p>
     <p class="paragrafoClasse">Lorem ipsum dolor sit amet.</p>
     <ul>
-        <li>Coisa</li>
-        <li>Coisa</li>
-        <li id="especial">Coisa</li>
+        <li>Coisa 1</li>
+        <li class="oculto">Coisa 2</li>
+        <li id="especial">Coisa 3</li>
     </ul>
 
     <div>
         <h2>Titulo 02</h2>
     </div>
+    <form>
+        <!-- Objeto do tipo input não contem o atributo do tipo innerHTML, contem value -->
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <br>
+        <input type="checkbox" name="turno" id="turnoManha" value="manha">
+        <label for="turnoManha">Manha</label>
+        <input type="checkbox" name="turno" id="turnoTarde" value="tarde">
+        <label for="turnoTarde">Tarde</label>
+        <input type="checkbox" name="turno" id="turnoNoite" value="noite">
+        <label for="turnoNoite">Noite</label>
+        
+        <button onclick="dizerOi()">Dizer OI</button>
+    </form>
+
+
+    
     
 <script src="manipulacao.js"></script>
 </body>
