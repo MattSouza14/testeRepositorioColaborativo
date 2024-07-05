@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #retangulo{
+            display: flex;
+            width: 350px;
+            height: 200px;
+            border: 1px solid black;
+            
+        }
+
+        button{
+            width: 100px;
+            cursor: pointer;
+            color: white;
+        }
+        #red{
+            background-color: red;
+            border: none;
+        }
+        #red:hover{
+            background-color: rgb(164, 3, 3);
+        }
+        #green{
+            background-color: green;
+            border: none;
+        }
+        #green:hover{
+            background-color: rgb(1, 91, 1);
+
+        }
+        #blue{
+            background-color: blue;
+            border: none;
+
+        }
+        #blue:hover{
+            background-color: rgb(1, 1, 78);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="retangulo" onmouseover ="mudarCor('#ffffff')">
+        
+        </div>
+    <button id="red" onclick=" mudarCorBg('red')" class="corBotao">Vermelho</button>
+    <button id="green" onclick=" mudarCorBg('green')" class="corBotao">Verde</button>
+    <button id="blue" onclick=" mudarCorBg('blue')" class="corBotao">Azul</button>
+    </div>
+    
+
+    <script src="/lousa.js"></script>
+</body>
+</html>

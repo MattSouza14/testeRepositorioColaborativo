@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Restaurante</title>
+</head>
+<body>
+    <h1>Conta </h1>
+    <form action="">
+        <label for="entrada">Entrada: </label>
+        <input type="number" value="0" name="entrada" id="entrada" onchange="calcularConta()">
+        <br>
+        <label for="principal">Prato Principal: </label>
+        <input type="number" value="0" name=principal" id="principal" onchange="calcularConta()">
+        <br>
+        <label for="bebidas">Bebidas: </label>
+        <input type="number" value="0" name="bebidas" id="bebidas" onchange="calcularConta()">
+        <br>
+        <label for="sobremesa">Sobremesa: </label>
+        <input type="number" value="0" name="sobremesa" id="sobremesa" onchange="calcularConta()">
+        <br>
+        <label for="subtotal">Subtotal: </label>
+        <input type="number" value="0" name="subtotal" id="subtotal" disabled >
+        <br>
+        <label for="servico">10% Serviço : </label>
+        <input type="number" value="0" name="servico" id="servico" disabled >
+        <br> 
+        <label for="total">Total: </label>
+        <input type="number" value="0" name="total" id="total" disabled  >
+    </form>
+
+
+<script src="/calcRestaurante.js"></script>
+</body>
+</html>
