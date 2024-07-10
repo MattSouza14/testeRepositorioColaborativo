@@ -47,14 +47,15 @@ async function mostrarTela(cep){
     let localidade = document.createElement('li')
     let ddd = document.createElement('li')
 
-    cepLocal.innerHTML = `CEP: ${cep.cep}`
-    logadouro.innerHTML = `Logadouro: ${cep.logadouro}`
-    bairro.innerHTML = `Bairro: ${cep.bairro}`
-    localidade.innerHTML = `Localiade: ${cep.localidade}`
-    ddd.innerHTML = `DDD: ${cep.ddd}`
+    cepLocal.innerHTML = `CEP: ${objCEP.cep}`
+    logadouro.innerHTML = `Logadouro: ${objCEP.logadouro}`
+    bairro.innerHTML = `Bairro: ${objCEP.bairro}`
+    localidade.innerHTML = `Localiade: ${objCEP.localidade}`
+    ddd.innerHTML = `DDD: ${objCEP.ddd}`
 
     elementoPai.appendChild(divCEP)
     
+
 
 
 
