@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #FFFFFF;
+
+}
+body{
+    background-color: gray;
+}
+img{
+    width: 40%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    margin: 30px;
+    width: 250px;
+    height: 320px;
+    
+    border-radius: 8px;
+    background-color: rgb(19, 17, 17);
+}
+#button-search{
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height:30px;
+
+    background-color: gray;
+}
+
+
+#button-search:hover{
+
+    background-color: rgb(82, 80, 80);
+    cursor: pointer;
+
+}
+
+#input-search{
+    border-radius: 20px;
+    background-color: rgb(51, 48, 48);
+    border: none;
+    height: 26px;
+    width: 160px;
+    margin-top: 10px;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+h1{
+    margin: 15px;
+    font-size: 18px
+    
+}
+
+.configuracoes-tempo{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 8px;
+}
+
+.buttons-city{
+    display: flex;
+    gap: 10px;
+    margin: 35px;
+}
+.cities{
+    width: 100px;
+    height: 20px;
+
+    margin: 7px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: gray;
+    color: #FFFFFF;
+
+   
+}
+.cities:hover{
+    background-color: rgb(82, 80, 80);
+    cursor: pointer;
+
+}

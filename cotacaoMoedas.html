@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .btns{
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
-<style>
-
-</style>
 <body>
-    <h1>Cotação Moedas</h1>
-
-    <div class="container">
-        <div>
-            <div class="converter">
-                <form action="">
-                    <label for="valor">Valor a converter: </label>
-                    <input type="text" id="valor" placeholder="Ex: 50.20" name="valor">
-                    <input type="button" value="Dolar" name="botao">
-                    <input type="button" value="Euro" name="botao">
-                    <input type="button" value="Bit Coin" name="botao">
-                </form>
-              
-            </div>
-            <div class="resultados">
-
-
-
-            </div>
-
+    <h1>Cotação de Moedas</h1>
+    <form action="#">
+        <label for="valor">Valor a Converter</label>
+        <input type="number" id="valor" name="valor">
+        <div class="btns">        
+            <input type="button" value="Dólar" id="usd">
+            <input type="button" value="Euro" id="eur">
+            <input type="button" value="BitCoin" id="btc">
         </div>
-
+        
+    </form>
+    <div id="conversaoMoeda">
 
     </div>
 
-    <script src="/cotacaoMoedas.js"></script>
+    <script src="cotacaoMoedas.js"></script>
+    
 </body>
 </html>

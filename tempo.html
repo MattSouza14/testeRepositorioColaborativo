@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo</title>
+    <link rel="stylesheet" href="tempo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="container">
+    <div class="card-container">
+        <form action="">
+            <input type="text" id="input-search" placeholder="Digite o nome da cidade">
+            <button id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <h1 id="cidade">Tempo em Viena</h1>
+        <div class="configuracoes-tempo">
+            <div class="info-tempo">
+                <p id="temperatura">27ºC</p>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" id="icone">
+            </div>
+            <div class="info-chuva">
+                <p id="umidade">Umidade: 76%</p>
+                <p id="descricao">Chuva Leve</p>
+            </div>
+        </div>
+        <div class="buttons-city">
+            <ul class="left-buttons">
+                <li><button class="cities" id="viena">Viena</button></li>
+                <li><button class="cities" id="Zurique">Zurique</button></li>
+                <li><button class="cities" id="recife">Recife</button></li>
+                <li><button class="cities" id="natal">Natal</button></li>
+            </ul>
+            <ul class="right-buttons">
+                <li><button class="cities" id="copenhague">Copenhague</button></li>
+                <li><button class="cities" id="vancouver">Vancouver</button></li>
+                <li><button class="cities" id="joaoPessoa">João Pessoa</button></li>
+                <li><button class="cities" id="maceio">Maceio</button></li>
+            </ul>
+        </div>
+    </div>
+   </div> 
+    <script src="/tempo.js"></script>
+</body>
+</html>
